@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Currency Converter</h1>
+        <p>Here you can covert Currencies for 31 Different Countries</p>
+    </header>
+    <main>
+        <div class="c">
+            <div class="from">
+                <h2>From</h2>
+                <div class="input">
+                    <span>Select Country</span>
+                    <div id="from">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="f" id = "flag1">
+                        <select name="countries" id="from1">
+                            <option value="USD">USD</option>
+                            <option value="INR">INR</option>
+                        </select>
+                    </div>
+                    <input type="amount" placeholder="Enter amount" id="amount">
+                </div>
+            </div>
+            <button id="convert">convert</button>
+            <div class="to">
+                <h2>TO</h2>
+                <div class="output">
+                    <span>Select Country</span>
+                    <div id="to">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="t" id ="flag2">
+                        <select name="countries" id="to1">
+                            <option value="INR">INR</option>
+                            <option value="USD">USD</option>
+                        </select>
+                    </div>
+                    <input type="amount" id="getamt">
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="msg" id="cheif">1 USD = 83.96 INR</div>
+    <script src="code.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
